@@ -9,12 +9,12 @@
         <relativePath/>
     </parent>
 
-    <groupId>io.github.jhipster.registry</groupId>
-    <artifactId>jhipster-registry</artifactId>
+    <groupId>com.siliconharborlabs</groupId>
+    <artifactId>stk-registry</artifactId>
     <version>3.1.0</version>
     <packaging>war</packaging>
-    <name>JHipster Registry</name>
-    <description>JHipster service registry, made with Netflix Eureka and Spring Cloud Config</description>
+    <name>StackStack Registry</name>
+    <description>StackStack service registry, made with Netflix Eureka and Spring Cloud Config</description>
 
     <properties>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
@@ -392,11 +392,11 @@
                 <configuration>
                     <rules>
                         <requireMavenVersion>
-                            <message>You are running an older version of Maven. JHipster requires at least Maven ${maven.version}</message>
+                            <message>You are running an older version of Maven. StackStack requires at least Maven ${maven.version}</message>
                             <version>[${maven.version},)</version>
                         </requireMavenVersion>
                         <requireJavaVersion>
-                            <message>You are running an older version of Java. JHipster requires at least JDK ${java.version}</message>
+                            <message>You are running an older version of Java. StackStack requires at least JDK ${java.version}</message>
                             <version>[${java.version}.0,)</version>
                         </requireJavaVersion>
                     </rules>
@@ -500,7 +500,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker-maven-plugin.version}</version>
                 <configuration>
-                    <imageName>jhipsterregistry</imageName>
+                    <imageName>stkregistry</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

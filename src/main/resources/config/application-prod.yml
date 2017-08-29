@@ -55,7 +55,7 @@ security:
         password: admin
         role: USER,ADMIN
 # ===================================================================
-# JHipster specific properties
+# StackStack specific properties
 #
 # Full reference is available at: https://jhipster.github.io/common-application-properties/
 # ===================================================================
@@ -71,7 +71,7 @@ jhipster:
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
-    mail: # specific JHipster mail property, for standard properties see MailProperties
+    mail: # specific StackStack mail property, for standard properties see MailProperties
         from: JHipsterRegistry@localhost
         base-url: http://my-server-url-to-change # Modify according to your server's URL
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

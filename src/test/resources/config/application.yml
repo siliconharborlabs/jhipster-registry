@@ -35,7 +35,7 @@ server:
     address: localhost
 
 # ===================================================================
-# JHipster specific properties
+# StackStack specific properties
 #
 # Full reference is available at: https://jhipster.github.io/common-application-properties/
 # ===================================================================

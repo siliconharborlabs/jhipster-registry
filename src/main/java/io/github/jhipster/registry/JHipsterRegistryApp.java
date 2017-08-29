@@ -48,7 +48,7 @@ public class JHipsterRegistryApp {
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
-     * You can find more information on how profiles work with JHipster on <a href="http://jhipster.github.io/profiles/">http://jhipster.github.io/profiles/</a>.
+     * You can find more information on how profiles work with StackStack on <a href="http://jhipster.github.io/profiles/">http://jhipster.github.io/profiles/</a>.
      */
     @PostConstruct
     public void initApplication() {
@@ -93,13 +93,13 @@ public class JHipsterRegistryApp {
         String secretKey = env.getProperty("jhipster.security.authentication.jwt.secret");
         if (secretKey == null ) {
             log.error("\n----------------------------------------------------------\n" +
-                "Your JWT secret key is not set up, you will not be able to log into the JHipster.\n"+
+                "Your JWT secret key is not set up, you will not be able to log into the StackStack.\n"+
                 "Please read the documentation at https://jhipster.github.io/jhipster-registry/\n" +
                 "----------------------------------------------------------");
         } else if (secretKey.equals("this-secret-should-not-be-used-read-the-comment")) {
             log.error("\n----------------------------------------------------------\n" +
                 "Your JWT secret key is not configured using Spring Cloud Config, you will not be able to \n"+
-                "use the JHipster Registry dashboards to monitor external applications. \n" +
+                "use the StackStack Registry dashboards to monitor external applications. \n" +
                 "Please read the documentation at https://jhipster.github.io/jhipster-registry/\n" +
                 "----------------------------------------------------------");
         }
